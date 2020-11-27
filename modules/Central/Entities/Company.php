@@ -19,6 +19,7 @@ class Company extends Authenticatable
         'domain',
         'license',
         'date_start',
+        'theme',
     ];
 
     protected $casts = [

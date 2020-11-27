@@ -58,6 +58,7 @@ final class CompanyRepository implements Contracts\CompanyContract
     {
         $totalPoint = collect(explode('.', $data['domain']));
         $data['license'] = $totalPoint->first();
+        $data['theme'] = 'default';
 
         $obj = Company::create($data);
 
